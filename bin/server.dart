@@ -1,3 +1,6 @@
-import 'package:relic/relic.dart';
+import 'package:server_trauma_1/app.dart';
 
-void main() => RelicApp().serve();
+Future<void> main() async {
+  final app = App();
+  await app.serve(port: 8080);
+}
